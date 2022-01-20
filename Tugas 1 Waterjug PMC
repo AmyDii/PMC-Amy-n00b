@@ -1,0 +1,35 @@
+print("1. isi A")
+print("2. isi B")
+print("3. empty A")
+print("4. empty B")
+print("5. A ke B")
+print("6. B ke A")
+    
+try:
+   A = 0
+   B = 0
+   i = 0
+    
+   while ((B != 4) and (A != 4)):
+    inp = int(input("masukkan nomor instruksi: "))
+    if (inp == 1) and (A != 3):
+      A = 3
+    elif (inp == 2) and (B != 5):
+      B = 5
+    elif (inp == 3) and (A != 0):
+      A = 0
+    elif (inp == 4) and (B != 0):
+      B = 0
+    elif (inp == 5):
+      A = max(0, 3-A)
+      B = min(5-B, 5)
+    elif (inp == 6):
+      A = min(3-A, 3)
+      B = max(0, 5-B)
+    i = i + 1    
+    
+except:
+  print("An exception occurred")
+ 
+print("A =" + A)
+print("B =" + B)
