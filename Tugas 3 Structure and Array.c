@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 struct Student
 {
@@ -27,7 +27,7 @@ int main()
     }
     return 0;
   
-  printf("yang tidak bisa mengikuti ujian")
+  printf("yang tidak bisa mengikuti ujian");
   if Student[i].absen < 80;
   {
     printf("%-12s"\t, Student[i].nama);
