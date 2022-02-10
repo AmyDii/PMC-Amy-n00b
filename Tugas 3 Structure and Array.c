@@ -5,12 +5,18 @@ struct Student
   char nama[12];
   char nim[8];
   float absen;
-}
+};
 
 
 int main()
 {
-    for (int i = 0; i < sizeof(Student); i++)
+    struct Student dummy1 = {"amy", "18320031", 30.0};
+    struct Student dummy2 = {"diane", "18320021", 70.0};
+    struct Student dummy3 = {"brigitta", "18320011", 90.5};
+  
+    struct Student students[] = {dummy1, dummy2, dummy3};
+      
+    for (int i = 0; i < 10; i++)
     {
         cout << "masukan nama" << (i + 1) << ": ";
         cin >> Student[i].nama;
