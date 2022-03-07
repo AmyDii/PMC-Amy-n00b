@@ -1,3 +1,5 @@
+//#Gagal
+
 //Buat listkota dan listantarkota
 //Shadrina Syahla Vidyana (18320031)
 
